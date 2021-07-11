@@ -2,8 +2,8 @@
 FROM registry.example.com/base-os/debian:buster-10.9
 LABEL "maintainer"=<huangclyz@example.com>
 RUN addgroup --gid 1001 axs \
-    && adduser  --ingroup axs  --disabled-password --home /axs --gecos "axs" --shell /bin/bash --uid 1001 axs \
-    && cd /axs/ && mkdir appsystems applogs appdata middleware monitor
+    && adduser  --ingroup axs  --disabled-password --home /axs --gecos "axadm" --shell /bin/bash --uid 1001 axadm \
+    && cd /axadm/ && mkdir appsystems applogs appdata middleware monitor
         # appsystems:应用包目录
         # applogs日志目录
         # appdata应用持久化数据目录
